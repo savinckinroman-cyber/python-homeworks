@@ -1,0 +1,34 @@
+# Среднее значение по оценкам в списке
+user_scores = [3, 3, 5, 5, 1, 1]
+print("min =", min(user_scores), "max =", max(user_scores),"avg =", sum(user_scores) / len(user_scores))
+# второй вариант
+estimation_max = user_scores[0]
+estimation_min = user_scores[0] 
+total = 0
+for elem in user_scores:
+    if elem > estimation_max:
+        estimation_max = elem
+    elif elem < estimation_min:
+        estimation_min = elem 
+    total += elem   
+print("min =", estimation_min, "max =", estimation_max, "avg =", total / len(user_scores) )
+# Линейный поиск
+transactions = [ -100, -200, -100, 1000, -50, -90]
+card_oper = 0
+
+for oper in transactions:
+    if oper > 0:
+        card_oper += oper
+    else:
+        card_oper
+print(card_oper) 
+# индекс минимального значения в списке
+week_data = [0, 0, 12, 3, 0, 7, 1]
+n = min(week_data)
+nmin = (week_data.index(n) + 1)
+print ("меньше всего обращений обработано в",nmin, "- день недели") # определяет первый день с наименьшим числом обращений
+# второй вариант
+for day in range(len(week_data)):
+    if week_data[day] == min(week_data):
+        day +=1
+        print("меньше всего обращений обработано в",day, "- день недели") # выводит все дни с наименьшим числом обращений
