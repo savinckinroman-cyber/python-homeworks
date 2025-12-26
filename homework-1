@@ -1,0 +1,42 @@
+# Проверка числа (четное, нечетное)
+
+number = int(input("Введите целое число:"))
+if number % 2 == 0:
+    print("Это четное число.")
+else:
+    print("Это нечетное число.")
+
+# Работа с числами №1
+
+number = float(input("Введите число:"))
+if number > 0:
+    print(number * 2)
+elif number < 0:
+    print(number / 3)
+else:
+    print("Введенное число равно нулю")
+
+# Работа с числами №2
+
+number = int(input("Введите целое число:"))
+if number ** 2 >= 100:
+    print("Введено двузначное число.") 
+    if number > 0:
+        print("Введено положительное число.")
+    else:
+        print("Введено отрицательное число.")
+else:
+    if number ** 2 < 100 and number ** 2 % 2 == 0:
+        print("Введено четное число.")
+    else: 
+        print("Введено нечетное число")
+
+# Работа с числами №3
+
+number = int(input('Введите целое число'))
+if number > 5:
+    square = number ** 2
+    print('Квадрат введенного числа равен', square)
+else:
+    cubed = number ** 3
+    print('Куб введенного числа равен', cubed)
