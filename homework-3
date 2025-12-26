@@ -1,0 +1,45 @@
+# Определение високоснного года
+
+for year in range(2020, 2051):
+    if year % 4 == 0:
+        print(year, "- високоснный год")
+
+# Начальная сумма 120000 под 6% годовых на 6 лет
+
+loan = 120000
+for year in range(1, 7):
+   loan *= 1.06
+   if year == 6:
+       print ("Студент Джонсон будет должен банку к концу своего обучения - ", loan, "долларов")
+
+# Зерна на шахматной доске
+
+cell = 0
+grain = 0.5
+while grain < 100000:
+     cell +=1
+     grain *=2
+     print("на клетке № -", cell , "будет - ", int (grain) ,"зерен")
+print("Думаю я правильно выполнил эту задачу.")
+
+# Проверка чисел от 0 до 30, которые делятся на 2 и на 4, на 4 пропустить на 2 напечатать
+
+for i in range(31):
+    if i % 2 == 0 and i % 4 == 0:
+        pass
+    elif i % 2 == 0:
+       print(i)
+
+while True:
+    number = int(input("Введите целое число"))
+    if number % 7 == 0:
+        print("дурак совсем")
+        break
+    if number % 3 == 0 and number % 5 == 0:
+        print(number)
+        print(number ** 2)
+    elif number % 3 == 0: 
+        print(number)
+    elif number % 5 == 0: 
+        print(number ** 2)
+        continue
