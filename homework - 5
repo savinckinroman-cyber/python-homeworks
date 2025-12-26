@@ -1,0 +1,8 @@
+distance = int(input("Введите растояние между городами"))
+speed_of_movement = int(input("Введите среднюю скорость транспортного средства"))
+time_of_day = float(input("Введите время которое планируете проезжать в день"))
+fuel_consumption = float(input("Введите расход топлива транспортного средства на 100 километров"))
+fuel_price = float(input("Введите среднюю цену топлива"))
+print ('Путешествие будет длиться',int (distance / (speed_of_movement * time_of_day)),'полных дней' )
+print ("За время путешествия Вы истратите",float (distance / 100 * fuel_consumption),'литров топлива' )
+print ("За время путешествия на топливо Вы истратите",float (distance / 100 * fuel_consumption * fuel_price), "рублей")
